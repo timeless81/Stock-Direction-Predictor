@@ -63,7 +63,8 @@ Plotted with moving average of 20, 50 and 200 days.
 The growing spike amplitudes on the momentum indiactos is a good reflection of upwards trending closing price
 
 ![My Image](price_vs_momentum.png)
-
+### The setup 
+The main setup is that when you start from this date and by this date how much money will you have or by how much will the stocks up or down.
 
 
 
