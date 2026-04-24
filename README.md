@@ -6,8 +6,9 @@
 
 
 ## Overview
-The main setup is that if put your money in this stock from this date then how much will it be by that date
-or will the stock go up or down by this amount of percent.
+The intent of this project is to predict the direction of movement of the stock price based on several different factors like momentum, lag, technical indicators etc. 
+Based ont the stock movement direction the user of this ML system can take automatic bets if the ratio of success/failure is somewhat skewed. A 60:40 ratio would be a great winner.
+
 
 ## Key Features
 ### 1. Price based features
