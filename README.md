@@ -9,6 +9,8 @@
 The intent of this project is to predict the direction of movement of the stock price based on several different factors like momentum, lag, technical indicators etc. 
 Based ont the stock movement direction the user of this ML system can take automatic bets if the ratio of success/failure is somewhat skewed. A 60:40 ratio would be a great winner.
 
+### The setup 
+The main setup is that when you start from this date and by this date how much money will you have or by how much will the stocks up or down.
 
 ## Key Features
 ### 1. Price based features
@@ -51,22 +53,8 @@ Gold price.
 Bitcoin price.  
 Fed decisions.  
 
-### EDA (Exploratory Data Analysis)
+# EDA (Exploratory Data Analysis)
 
-#### Boolinger Band 
-![My Image](Images/bollinger.png)
-
-### Price vs moving averages
-Plotted with moving average of 20, 50 and 200 days. 
-![My Image](Images/price_vs_ma.png)
-### Price vs momentum indicators
-The growing spike amplitudes on the momentum indiactos is a good reflection of upwards trending closing price
-
-![My Image](Images/price_vs_momentum.png)
-### The setup 
-The main setup is that when you start from this date and by this date how much money will you have or by how much will the stocks up or down.
-
-## EDA Observations:
 
 ### 1. Correlation heat map - suggests closing price is highly correlated with sp500, nasdaq and dowjones
 So we can drop those features
@@ -96,10 +84,22 @@ Added the following features to the data to enrich the trends in the data.
 3. Added momentum features - ROC, Bollinger bands, MACD, RSI etc.
 4. Added seaonality features like, day, week and quarter in the data.
 
-## Base Model -
+#### Boolinger Band 
+![My Image](Images/bollinger.png)
+
+### Price vs moving averages
+Plotted with moving average of 20, 50 and 200 days. 
+![My Image](Images/price_vs_ma.png)
+### Price vs momentum indicators
+The growing spike amplitudes on the momentum indiactos is a good reflection of upwards trending closing price
+
+![My Image](Images/price_vs_momentum.png)
+
+
+# Base Model -
 Logistical regression was used as the base model for this due to its efficiency in binary classification problems. It becomes a model to compare other models.
 
-### Evaluation Metric -
+# Evaluation Metric -
 Stock data is sensitive to the false prediction either false positive or false negative. 
 Precistion suggests that when the model says “stock will go up", how often is it correct
 Recall suggests that Out of all actual sotck up days, how many did the model catch?
@@ -111,6 +111,14 @@ Why accuracy is not the main evaluation metric -
 It is because the accuracy suggest the overall correctness. In stock prediction, precision reflects the quality of buy signals, while recall captures the ability to identify profitable opportunities.
 
 
+# Conclusions
 
+# Future work -
+Although the modeling is able to predict nearly 53% accuracy, but it doesn't have high value idea for predicting the stock direction and it is not sufficient to follow the modeling to make successful trades. 
+
+The suggested items to improve on this model is to do the following to make it more actionable and successful.
+1. Change the target from stock direction to qualified signals of 'buy', 'sell' or 'hold'.
+2. Qualify the strategy by running it over different stock at different points in time.
+3. Quantify the efficiency of the model to generate the profit for the user of this ML model.
 
 
